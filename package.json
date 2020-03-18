@@ -1,7 +1,7 @@
 {
-  "name": "vscode-clean-css-formatter",
-  "displayName": "Clean CSS Formatter",
-  "description": "CSS formatter using Clean CSS",
+  "name": "vscode-simply-css-formatter",
+  "displayName": "Simply CSS Formatter",
+  "description": "Simply CSS formatter using Clean CSS",
   "version": "0.0.1",
   "publisher": "williamdang",
   "icon": "icon.png",
@@ -9,7 +9,7 @@
   "main": "./out/extension.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wdang/vscode-clean-css-formatter"
+    "url": "https://github.com/wdang/vscode-simply-css-formatter"
   },
   "engines": {
     "vscode": "^1.43.0"
