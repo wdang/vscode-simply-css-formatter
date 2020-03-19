@@ -15,7 +15,9 @@
     "vscode": "^1.43.0"
   },
   "keywords": [
-    "multi-root ready"
+    "multi-root ready",
+    "formatter",
+    "css"
   ],
   "categories": [
     "Other"
