@@ -53,18 +53,123 @@
     "configuration": {
       "title": "Simply CSS Formatter",
       "properties": {
-        "simplycss.useCodeSnippetsOnMethodSuggest": {
+        "simplyCss.configs": {
+          "type": "string",
+          "enum": [
+            "simple",
+            "pretty",
+            "custom"
+          ],
+          "default": "simple",
+          "description": "'simple' | 'pretty' | 'custom' Predefined configurations. Ignores fine grained settings. Default: 'simple'",
+          "enumDescriptions": [
+            "Selectors and rules on a single line",
+            "Prettified for max readability",
+            "Use fined grained settings"
+          ]
+        },
+        "simplyCss.format.general.breakWith": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "window",
+            "unix"
+          ],
+          "default": "auto",
+          "description": "Character used for line endings. Default: 'auto'",
+          "enumDescriptions": [
+            "Use the default system settings",
+            "crlf",
+            "lf"
+          ]
+        },
+        "simplyCss.format.general.semicolonAfterLastProperty": {
+          "type": "boolean",
+          "default": true,
+          "description": "controls removing trailing semicolons in rule;. Default: true"
+        },
+        "simplyCss.format.general.indentBy": {
+          "type": "number",
+          "default": 2,
+          "description": "controls number of characters to indent with. Default: 2"
+        },
+        "simplyCss.format.general.indentWith": {
+          "type": "string",
+          "default": "space",
+          "description": "Character used for indentation. Default: 'space'",
+          "enum": [
+            "space",
+            "tab"
+          ],
+          "enumDescriptions": [
+            "indent with spaces",
+            "indent with tabs"
+          ]
+        },
+        "simplyCss.format.general.wrapAt": {
+          "type": "number",
+          "default": 0,
+          "description": "controls maximum line length. Default: 0"
+        },
+        "simplyCss.format.newLine.afterAtRule": {
           "type": "boolean",
           "default": false,
-          "description": "Complete functions with their parameter signature."
+          "description": "line break after an at-rule: @charset. Default: false"
         },
-        "simplycss.tsdk": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "default": null,
-          "description": "Specifies the folder path containing the tsserver and lib*.d.ts files to use."
+        "simplyCss.format.newLine.afterBlockBegins": {
+          "type": "boolean",
+          "default": false,
+          "description": "line break after a block begins: `@media`. Default: false"
+        },
+        "simplyCss.format.newLine.afterBlockEnds": {
+          "type": "boolean",
+          "default": false,
+          "description": "line break after a block ends. Default: false"
+        },
+        "simplyCss.format.newLine.afterComment": {
+          "type": "boolean",
+          "default": true,
+          "description": "line break after a comment. Default: true"
+        },
+        "simplyCss.format.newLine.afterProperty": {
+          "type": "boolean",
+          "default": false,
+          "description": "line break after a property. Default: false"
+        },
+        "simplyCss.format.newLine.afterRuleBegins": {
+          "type": "boolean",
+          "default": false,
+          "description": "line break after an opening rule brace. Default: false"
+        },
+        "simplyCss.format.newLine.afterRuleEnds": {
+          "type": "boolean",
+          "default": true,
+          "description": "line break after a ending rule brace. Default: true"
+        },
+        "simplyCss.format.newLine.beforeBlockEnds": {
+          "type": "boolean",
+          "default": false,
+          "description": "line break before a block ends. Default: false"
+        },
+        "simplyCss.format.newLine.betweenSelectors": {
+          "type": "boolean",
+          "default": false,
+          "description": "line break between selectors. Default: false"
+        },
+        "simplyCss.format.spaces.aroundSelectorRelation": {
+          "type": "boolean",
+          "default": true,
+          "description": "spaces around selector relations: div > a -vs- div>a. Default: true"
+        },
+        "simplyCss.format.spaces.beforeBlockBegins": {
+          "type": "boolean",
+          "default": false,
+          "description": "spaces before a block begins: .block { -vs- .block{. Default: false"
+        },
+        "simplyCss.format.spaces.beforeValue": {
+          "type": "boolean",
+          "default": true,
+          "description": "spaces before a value: width: 1rem -vs- width:1rem. Default: true"
         }
       }
     }
