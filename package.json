@@ -12,7 +12,7 @@
     "url": "https://github.com/wdang/vscode-simply-css-formatter"
   },
   "engines": {
-    "vscode": "^1.43.0"
+    "vscode": "^1.41.1"
   },
   "keywords": [
     "multi-root ready",
@@ -38,7 +38,7 @@
     "@types/glob": "^7.1.1",
     "@types/mocha": "^7.0.1",
     "@types/node": "^12.11.7",
-    "@types/vscode": "^1.43.0",
+    "@types/vscode": "^1.41.1",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
     "clean-css": "^4.2.3",
