@@ -55,7 +55,7 @@ const kDefaultFormatOptions = {
     // Controls maximum line length, defaults to `false`
     wrapAt: 0,
 
-    indentWith: undefined,
+    indentWith: 'space',
 
     semicolonAfterLastProperty: true,
 };
